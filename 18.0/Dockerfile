@@ -53,7 +53,7 @@ RUN apt-get update && \
     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
 
 # install pyjwt package for indian localisation
-RUN pip3 install daff==1.3.46 --break-system-packages
+RUN pip3 install pyjwt==1.3.46 --break-system-packages
 
 # install latest postgresql-client
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
